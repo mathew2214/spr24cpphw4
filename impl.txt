@@ -1,0 +1,7 @@
+done: make ttt board object.
+done: ttt board object should have method "new" that makes an array of cells of arbitrary 2d size. each cell holds 2 chars. 
+done: make cell objects.
+
+edit cells at position, via board object. 
+player 1 and 2 editing and replacements. 
+make board able to edit cell chars. 
