@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 using namespace std;
 class tcell{
 private: 
@@ -24,4 +25,10 @@ void editCell(char x,char y){
 xpos = x;
 ypos = y;
 }
+string getChars(){
+stringstream oUt;
+oUt << char(xpos);
+oUt << char(ypos);
+return oUt.str();
+};
 };

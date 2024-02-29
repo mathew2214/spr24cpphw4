@@ -78,12 +78,28 @@ brdclsx->at(e)[y].setCell(cntx,cnty);
 }}
 }
 
-int checkXwin(){
-int vic=0;
-
+int checkXwin(int e){
+int vic=1;
+vector<tcell> rowcheck;
+for (int i=0; i<brdclsx->at(e).size();i++){
+rowcheck.push_back(brdclsx->at(e)[i]);
+}
+for (int i=0; i<rowcheck.size();i++){
+if(rowcheck.at(0).getChars() != rowcheck.at(i).getChars()){vic=0;}
+}
 return vic;
 }
 
-
+int checkYwin(int e){
+int vic=1;
+vector<tcell> rowcheck;
+for (int i=0; i<brdclsx->size();i++){
+rowcheck.push_back(brdclsx->at(i)[e]);
+}
+for (int i=0; i<rowcheck.size();i++){
+if(rowcheck.at(0).getChars() != rowcheck.at(i).getChars()){vic=0;}
+}
+return vic;
+}
 
 };
