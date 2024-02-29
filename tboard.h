@@ -79,11 +79,7 @@ brdclsx->at(e)[y].setCell(cntx,cnty);
 }
 
 int checkXwin(){
-int e=0;
-
-
 int vic=0;
-
 
 return vic;
 }

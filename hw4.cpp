@@ -31,7 +31,6 @@ std::this_thread::sleep_for(std::chrono::seconds(1));
 system("clear");
 cout <<"iteration: "<< (i)<< endl;
 mn.editCL(mn.resx(i), mn.resy(i), PLy1Sm[0], PLy1Sm[1]);
-if(mn.checkXwin()){cout << "victory detected in X direction";}
 mn.prntBd();
 }
 mn.clearBoard();
@@ -48,6 +47,16 @@ mn.prntBd();
 }
 
 //board editor testing*/
+for (int i =(sz+1); i <= mn.howBig();i++){
+
+std::this_thread::sleep_for(std::chrono::seconds(1));
+system("clear");
+cout <<"iteration: "<< (i)<< endl;
+mn.editCL(mn.resx(i), mn.resy(i), PLy1Sm[0], PLy1Sm[1]);
+mn.prntBd();
+if(mn.checkXwin()){cout << "victory detected in X direction";}
+}
+
 
 return 0;
 }
