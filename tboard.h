@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 #include "tcell.h"
-#include <algorithm>
 using namespace std;
 class tboard {
 private:
