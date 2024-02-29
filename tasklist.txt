@@ -1,8 +1,0 @@
-make "printWelcomeMessage()" to show "Welcome to Dynamic Tic-Tac-Toe Missouri S&T Edition"
-make function "displayMenu()" to show a main menu for different board sizes. 
-make "initializeBoard()" to make the board of speicifed size
-make "printBoard()" to show current state of board. 
-make "updateBoard()" to apply changes to Board. 
-make "checkWin()" to check for win conditions.
-make "checkTie()" to check for draws
-make "printGoodbyeMessage()" to exit and ecorage replay.
